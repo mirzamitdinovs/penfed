@@ -1,16 +1,20 @@
-import navbarData from 'data/navbar.data'
-import Image from 'next/image'
-import Logo from 'public/assets/images/logo.png'
-import Button from 'components/Button'
-import NavbarItem from 'components/NavbarItem'
+import Button from 'components/Button';
+import NavbarItem from 'components/NavbarItem';
+import Image from 'next/image';
+import Logo from 'public/assets/images/logo.png';
+import useSWR from 'swr';
+const fetcher = (url) => fetch(url).then((res) => res.json());
 const Navbar = () => {
+	const { data } = useSWR('/api/v1/navbar', fetcher);
+
+	if (!data) return null;
 	return (
 		<div className='flex w-screen items-center py-3 px-5 '>
 			<div>
 				<Image src={Logo} width={200} height={50} />
 			</div>
 			<div className='flex justify-evenly flex-1'>
-				{navbarData.map((item, index) => (
+				{data.map((item, index) => (
 					<NavbarItem item={item} key={index} />
 				))}
 			</div>
@@ -29,7 +33,7 @@ const Navbar = () => {
 			/>
 			{/* </div> */}
 		</div>
-	)
-}
+	);
+};
 
-export default Navbar
+export default Navbar;
