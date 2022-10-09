@@ -22,19 +22,19 @@ export default [
 				link: '/savings',
 				children: [
 					{
-						tilte: 'Premium Online Savings',
+						title: 'Premium Online Savings',
 						link: '/',
 					},
 					{
-						tilte: 'Regular Savings',
+						title: 'Regular Savings',
 						link: '/',
 					},
 					{
-						tilte: 'Money Market Savings',
+						title: 'Money Market Savings',
 						link: '/',
 					},
 					{
-						tilte: 'All Savings Accounts',
+						title: 'All Savings Accounts',
 						link: '/',
 					},
 				],
@@ -72,7 +72,90 @@ export default [
 	{
 		title: 'Mortgage & Home Equity',
 		link: '/mortgage-equity',
-		children: [],
+		children: [
+			{
+				title: 'PURCHASE',
+
+				children: [
+					{
+						title: 'Buy a Home',
+						link: '/'
+					},
+					{
+						title: 'VA Loan',
+						link: '/'
+					},
+					{
+						title: 'FHA',
+						link: '/'
+					},
+					{
+						title: 'Conventional Fixed',
+						link: '/'
+					},
+					{
+						title: 'Jumbo Loan',
+						link: '/'
+					},
+					{
+						title: 'ARM',
+						link: '/'
+					},
+					{
+						title: 'Power Buyer',
+						link: '/'
+					},
+				]
+			},
+			{
+				title: 'REFINANCE',
+				children: [
+					{
+						title: 'Refinance your Home',
+						link: '/'
+					},
+					{
+						title: 'VA Streamline',
+						link: '/'
+					}
+				]
+			},
+			{
+				title: 'HOME EQUITY',
+				children: [
+					{
+						title: 'HELOC',
+						link: '/'
+					}
+				]
+			},
+			{
+				title: 'TOOLS & RESOURCES',
+				children: [
+					{
+						title: 'First-Time Homebuyer',
+						link: '/'
+					},
+					{
+						title: 'PenFed Title, LLC',
+						link: '/'
+					},
+					{
+						title: 'Mortgage Knowledge Center',
+						link: '/'
+					},
+					{
+						title: 'Mortgage Calculators',
+						link: '/'
+					},
+					{
+						title: 'Contact PenFed Mortgage Team',
+						link: '/'
+					},
+				]
+			}
+
+		],
 	},
 	{
 		title: 'Loans',
@@ -84,4 +167,6 @@ export default [
 		link: '/learn',
 		children: [],
 	},
+
+
 ];

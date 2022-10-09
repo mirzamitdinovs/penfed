@@ -8,27 +8,27 @@ import {
 
 export default [
 	{
-		icon: <HomeIcon />,
+		icon: <HomeIcon className='w-10 h-10' />,
 		title: 'Mortgages',
 		link: '/mortgages',
 	},
 	{
-		icon: <CreditCardIcon />,
+		icon: <CreditCardIcon className='w-10 h-10' />,
 		title: 'Credit Cards',
 		link: '/credit-cards',
 	},
 	{
-		icon: <BanknotesIcon />,
+		icon: <BanknotesIcon className='w-10 h-10' />,
 		title: 'Savings',
 		link: '/savings',
 	},
 	{
-		icon: <HomeModernIcon />,
+		icon: <HomeModernIcon className='w-10 h-10' />,
 		title: 'Home Equity',
 		link: '/home-equity',
 	},
 	{
-		icon: <DocumentChartBarIcon />,
+		icon: <DocumentChartBarIcon className='w-10 h-10' />,
 		title: 'Checkings',
 		link: '/checkings',
 	},

@@ -2,7 +2,7 @@ export default [
 	{
 		id: '1',
 		title: 'How Much Should I Spend on a Car?',
-		avatar: '/public/assets/images/blog1-avatar.jpg',
+		avatar: '/assets/images/blog1-avatar.jpg',
 		image: '/public/assets/images/blog1-image.jpg',
 		duration: '4',
 		category: 'auto',
@@ -55,7 +55,7 @@ export default [
 	{
 		id: '2',
 		title: 'Should I Buy a New or Used Car?',
-		avatar: '/public/assets/images/blog2-avatar.jpg',
+		avatar: '/assets/images/blog2-avatar.jpg',
 		image: '/public/assets/images/blog2-avatar.jpg',
 		duration: '11',
 		category: 'auto',
@@ -329,7 +329,7 @@ LEARN MORE</a></div>
 	{
 		id: '3',
 		title: '7 Common Car Buying Mistakes to Avoid',
-		avatar: '/public/assets/images/blog3-avatar.jpg',
+		avatar: '/assets/images/blog3-avatar.jpg',
 		image: '/public/assets/images/blog3-avatar.jpg',
 		duration: '4',
 		category: 'auto',

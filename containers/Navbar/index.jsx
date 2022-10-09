@@ -1,5 +1,35 @@
+import navbarData from 'data/navbar.data'
+import Image from 'next/image'
+import Logo from 'public/assets/images/logo.png'
+import Button from 'components/Button'
+import NavbarItem from 'components/NavbarItem'
 const Navbar = () => {
-	return <div>Navbar</div>;
-};
+	return (
+		<div className='flex w-screen items-center py-3 px-5 '>
+			<div>
+				<Image src={Logo} width={200} height={50} />
+			</div>
+			<div className='flex justify-evenly flex-1'>
+				{navbarData.map((item, index) => (
+					<NavbarItem item={item} key={index} />
+				))}
+			</div>
+			{/* <div className='w-52 flex justify-between'> */}
+			<div className='mr-2'>
+				<Button
+					text={'Join Now'}
+					clbFunc={() => console.log('Join Now')}
+					color={'primary'}
+				/>
+			</div>
+			<Button
+				text={'Log In'}
+				clbFunc={() => console.log('Log In')}
+				color={'secondary'}
+			/>
+			{/* </div> */}
+		</div>
+	)
+}
 
-export default Navbar;
+export default Navbar
