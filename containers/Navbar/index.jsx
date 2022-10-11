@@ -1,6 +1,7 @@
 import Button from 'components/Button';
 import NavbarItem from 'components/NavbarItem';
 import Image from 'next/image';
+import Link from 'next/link';
 import Logo from 'public/assets/images/logo.png';
 import useSWR from 'swr';
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -10,9 +11,11 @@ const Navbar = () => {
 	if (!data) return null;
 	return (
 		<div className='flex w-screen items-center py-3 px-5 '>
-			<div>
-				<Image src={Logo} width={200} height={50} />
-			</div>
+			<Link href='/'>
+				<a>
+					<Image src={Logo} width={200} height={50} />
+				</a>
+			</Link>
 			<div className='flex justify-evenly flex-1'>
 				{data.map((item, index) => (
 					<NavbarItem item={item} key={index} />
